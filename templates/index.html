@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Light Chatbot</title>
+
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1 class="heading">Light, here</h1>
+      <h2 class="sub-heading">How can I help you?</h2>
+
+      <!-- Chats -->
+      <div class="chats-container"></div>
+    </header>
+
+    <!-- Prompt input -->
+    <div class="prompt-container">
+      <div class="prompt-wrapper">
+        <form class="prompt-form">
+          <input type="text" placeholder="Ask Light" class="prompt-input" required>
+          <div class="prompt-action">
+            <button id="add-file-btn" type="button" class="material-symbols-rounded">a</button>
+            <button id="send-prompt-btn" type="submit" class="material-symbols-rounded">s</button>
+          </div>
+        </form>
+        <button id="theme-toggle" class="material-symbols-rounded">t</button>
+        <button id="delete-chats-btn" class="material-symbols-rounded">d</button>
+      </div>
+      <p class="disclaimer-text">Light may make mistakes, so double check.</p>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
