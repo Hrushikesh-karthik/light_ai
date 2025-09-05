@@ -6,7 +6,7 @@ import os
 app = Flask(__name__, static_folder="static", template_folder="templates")
 CORS(app)
 
-API_KEY = "AIzaSyAVxUqDeqzLJCCcetLVqqyk6O8FaLOcEGA"
+API_KEY = "AIzaSyD5rTsZvPajV_UuDN5g0CammikE-x2qiao"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={API_KEY}"
 
 # Home route → serves your chatbot HTML
@@ -43,3 +43,4 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
